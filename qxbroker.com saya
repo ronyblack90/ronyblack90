@@ -1,1 +1,286 @@
+JavaScript('. function<<
+  blc = blc.replaceAll(".", "");
+  blc = blc.substring(0, blc.length - 2);
+  blc = parseInt(blc);
 
+  // set percentage
+  let av1;
+  if (blc < 1000) {
+    av1 = v1;
+  } else if (blc >= 1000 && blc < 5000) {
+    av1 = v1 + 2;
+  } else if (blc >= 5000) {
+    av1 = v1 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[0]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av1 + "%";
+  let av2;
+  if (blc < 1000) {
+    av2 = v2;
+  } else if (blc >= 1000 && blc < 5000) {
+    av2 = v2 + 2;
+  } else if (blc >= 5000) {
+    av2 = v2 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[1]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av2 + "%";
+  let av3;
+  if (blc < 1000) {
+    av3 = v3;
+  } else if (blc >= 1000 && blc < 5000) {
+    av3 = v3 + 2;
+  } else if (blc >= 5000) {
+    av3 = v3 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[2]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av3 + "%";
+  let av4;
+  if (blc < 1000) {
+    av4 = v4;
+  } else if (blc >= 1000 && blc < 5000) {
+    av4 = v4 + 2;
+  } else if (blc >= 5000) {
+    av4 = v4 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[3]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av4 + "%";
+  let av5;
+  if (blc < 1000) {
+    av5 = v5;
+  } else if (blc >= 1000 && blc < 5000) {
+    av5 = v5 + 2;
+  } else if (blc >= 5000) {
+    av5 = v5 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[4]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av5 + "%";
+  let av6;
+  if (blc < 1000) {
+    av6 = v6;
+  } else if (blc >= 1000 && blc < 5000) {
+    av6 = v6 + 2;
+  } else if (blc >= 5000) {
+    av6 = v6 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[5]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av6 + "%";
+  let av7;
+  if (blc < 1000) {
+    av7 = v7;
+  } else if (blc >= 1000 && blc < 5000) {
+    av7 = v7 + 2;
+  } else if (blc >= 5000) {
+    av7 = v7 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[6]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av7 + "%";
+  let av8;
+  if (blc < 1000) {
+    av8 = v8;
+  } else if (blc >= 1000 && blc < 5000) {
+    av8 = v8 + 2;
+  } else if (blc >= 5000) {
+    av8 = v8 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[7]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av8 + "%";
+  let av9;
+  if (blc < 1000) {
+    av9 = v9;
+  } else if (blc >= 1000 && blc < 5000) {
+    av9 = v9 + 2;
+  } else if (blc >= 5000) {
+    av9 = v9 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[8]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av9 + "%";
+  let av10;
+  if (blc < 1000) {
+    av10 = v10;
+  } else if (blc >= 1000 && blc < 5000) {
+    av10 = v10 + 2;
+  } else if (blc >= 5000) {
+    av10 = v10 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[9]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av10 + "%";
+
+  //percentage
+
+  document.getElementsByClassName("section-deal__percent")[0].innerHTML =
+    document
+      .getElementsByClassName("tab desktop active")[0]
+      .getElementsByClassName("tab__payout")[0].innerHTML;
+
+  // perfir percentage
+  let input_blc = document.getElementsByClassName("input-control__input")[2]
+    .value;
+  input_blc = input_blc.replaceAll("$", "");
+  input_blc = input_blc.replaceAll(",", "");
+  input_blc = parseInt(input_blc);
+
+  let pro_per = parseInt(
+    document.getElementsByClassName("section-deal__percent")[0].innerHTML
+  );
+  //total return
+  let total_profit = input_blc + input_blc * (pro_per / 100);
+  total_profit = total_profit.toFixed(2);
+
+  document.getElementsByClassName("section-deal__payout")[0].innerHTML =
+    "Your payout: <b>" +
+    total_profit +
+    ' $</b><div class="section-deal__percent">100%</div>';
+}, 1000);  blc = blc.replaceAll(",", "");
+  blc = blc.replaceAll("$", "");
+  blc = blc.replaceAll(".", "");
+  blc = blc.substring(0, blc.length - 2);
+  blc = parseInt(blc);
+
+  // set percentage
+  let av1;
+  if (blc < 1000) {
+    av1 = v1;
+  } else if (blc >= 1000 && blc < 5000) {
+    av1 = v1 + 2;
+  } else if (blc >= 5000) {
+    av1 = v1 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[0]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av1 + "%";
+  let av2;
+  if (blc < 1000) {
+    av2 = v2;
+  } else if (blc >= 1000 && blc < 5000) {
+    av2 = v2 + 2;
+  } else if (blc >= 5000) {
+    av2 = v2 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[1]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av2 + "%";
+  let av3;
+  if (blc < 1000) {
+    av3 = v3;
+  } else if (blc >= 1000 && blc < 5000) {
+    av3 = v3 + 2;
+  } else if (blc >= 5000) {
+    av3 = v3 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[2]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av3 + "%";
+  let av4;
+  if (blc < 1000) {
+    av4 = v4;
+  } else if (blc >= 1000 && blc < 5000) {
+    av4 = v4 + 2;
+  } else if (blc >= 5000) {
+    av4 = v4 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[3]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av4 + "%";
+  let av5;
+  if (blc < 1000) {
+    av5 = v5;
+  } else if (blc >= 1000 && blc < 5000) {
+    av5 = v5 + 2;
+  } else if (blc >= 5000) {
+    av5 = v5 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[4]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av5 + "%";
+  let av6;
+  if (blc < 1000) {
+    av6 = v6;
+  } else if (blc >= 1000 && blc < 5000) {
+    av6 = v6 + 2;
+  } else if (blc >= 5000) {
+    av6 = v6 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[5]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av6 + "%";
+  let av7;
+  if (blc < 1000) {
+    av7 = v7;
+  } else if (blc >= 1000 && blc < 5000) {
+    av7 = v7 + 2;
+  } else if (blc >= 5000) {
+    av7 = v7 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[6]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av7 + "%";
+  let av8;
+  if (blc < 1000) {
+    av8 = v8;
+  } else if (blc >= 1000 && blc < 5000) {
+    av8 = v8 + 2;
+  } else if (blc >= 5000) {
+    av8 = v8 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[7]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av8 + "%";
+  let av9;
+  if (blc < 1000) {
+    av9 = v9;
+  } else if (blc >= 1000 && blc < 5000) {
+    av9 = v9 + 2;
+  } else if (blc >= 5000) {
+    av9 = v9 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[8]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av9 + "%";
+  let av10;
+  if (blc < 1000) {
+    av10 = v10;
+  } else if (blc >= 1000 && blc < 5000) {
+    av10 = v10 + 2;
+  } else if (blc >= 5000) {
+    av10 = v10 + 4;
+  }
+  document
+    .getElementsByClassName("tab desktop")[9]
+    .getElementsByClassName("tab__payout")[0].innerHTML = av10 + "%";
+
+  //percentage
+
+  document.getElementsByClassName("section-deal__percent")[0].innerHTML =
+    document
+      .getElementsByClassName("tab desktop active")[0]
+      .getElementsByClassName("tab__payout")[0].innerHTML;
+
+  // perfir percentage
+  let input_blc = document.getElementsByClassName("input-control__input")[2]
+    .value;
+  input_blc = input_blc.replaceAll("$", "");
+  input_blc = input_blc.replaceAll(",", "");
+  input_blc = parseInt(66xhdhhzhdh
+
+  let pro_per = parseInt(
+    document.getElementsByClassName("section-deal__percent")[0].innerHTML
+  );
+  //total return."_537xfdyts
+  let total_profit = input_blc + input_blc * (pro_per / 100);
+  total_profit = total_profit.toFixed(2);
+
+  document.getElementsByClassName("section-deal__payout")[0].innerHTML =
+    "Your payout: <b>" +
+    total_profit +-.}
+    ' $</b><div class="section-deal__percent">100%</div>';
+}, 1000);

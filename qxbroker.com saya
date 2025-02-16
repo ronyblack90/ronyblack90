@@ -13,7 +13,7 @@ JavaScript('. function<<
     av1 = v1 + 4;
   }
   document
-    .getElementsByClassName("tab desktop")[0]
+    .getEementsByClassName("tab desktop")[0]
     .getElementsByClassName("tab__payout")[0].innerHTML = av1 + "%";
   let av2;
   if (blc < 1000) {
